@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push notifications</title>
+  </head>
+  <body>
+    <h1>Push notifications</h1>
+  </body>
+  <script>
+    addEventListener("load", async () => {
+      await navigator.serviceWorker.register("./sw.js");
+    });
+
+    (async function subscribe() {
+      const serviceWorker = await navigator.serviceWorker.ready;
+
+      const push = await serviceWorker.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey:
+          "BHYKFCo79xV0GBJQOmvUIySwVvQJKNqKGB9-GYaec70jo4eI1nogxtOpGR7R5TCJSu8sF1rCkY4EWaXniKTy7DA",
+      });
+
+      console.log(push);
+    })();
+  </script>
+</html>
