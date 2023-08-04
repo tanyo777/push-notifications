@@ -1,11 +1,11 @@
 const webPush = require("web-push");
 const express = require("express");
 
-const app = express();
+// const app = express();
 
-app.use(express.static("./"));
+// app.use(express.static("./"));
 
-app.listen(5000);
+// app.listen(5000);
 
 const vapidKeys = {
   publicKey:
@@ -30,8 +30,24 @@ const subscription = {
   },
 };
 
+const test = {
+  endpoint:
+    "https://fcm.googleapis.com/fcm/send/e5omcd1a9Xo:APA91bHW0rDDM9yZ0Q7ttbtS_6V7XWsxhN-CFebztnCw8Zy5pjY58WsVaEFecXZUQY2AkCbJougQ90jIFQmEn_Qx2LQBpgtxpjjLpD3Kr_vTf1wioi_kOcV5SBHH1viTEMOA1QVIcA1o",
+  expirationTime: null,
+  keys: {
+    p256dh:
+      "BM7a9nBOtedowxRlQcLelVgH2osb35vqCIy2SsjpLv1n7MEmPG8Z_0XQ_exSj4ll5LpR5QRVdgxAvbgTLY_1ccE",
+    auth: "ZjcE0sM6wdOG7oIX2-NF5g",
+  },
+};
+
 async function send() {
-  await webPush.sendNotification(subscription, "Testing push notifications");
+  const response = await webPush.sendNotification(
+    test,
+    "Testing push notifications"
+  );
+
+  console.log(response);
 }
 
 send();
