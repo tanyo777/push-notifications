@@ -32,15 +32,14 @@ const subscription = {
 
 const test = {
   endpoint:
-    "https://fcm.googleapis.com/fcm/send/eBgGRnH9T4Q:APA91bFZSfxrLXMcWF8zI3Raw1j_LbwFoI1Uy1zOsIorD8MbyMGZY2i0cNDP-eaIBOX_ADAaUm2ug10kt6kKSkbHr5EunittbLBx8n5IXhGMehg4hgxwe0-Hiv00IXhbfUQDEVl-RSWY",
+    "https://fcm.googleapis.com/fcm/send/d9WtvUMypLA:APA91bEPyGjs707KrkplhIt71SRYpE81kwEvZcl1mHAkfUhNlldbSLpjG12tIy-PgdinpupSU48UrZ5sdFzvioKD1P7akBMUTelidP96aHJFJZK5TdMk8WlZY6u0657VUEfjV7B9QIf4",
   expirationTime: null,
   keys: {
     p256dh:
-      "BNw0Muqztfl6cdXX6NNEXverkygIV0TBmSTy9ooJxgnHcCgWqZ6QwC_iH1A8OBGuzR28dh0VLF2pzOntnah4Uuo",
-    auth: "Ly9OEaK141RPRmmWO6_zSQ",
+      "BJ8H0igGYatxClEHVE8yBKLu0CZj1tNrw6N87e_T38cN7Z60riSKMSvNp_MltPSSdNAP48gpiEmacUOBPgNwGYE",
+    auth: "UeJGfLl09mwPS5jBaLRY0Q",
   },
 };
-
 async function send() {
   const response = await webPush.sendNotification(
     test,
