@@ -1,11 +1,11 @@
 const webPush = require("web-push");
 const express = require("express");
 
-// const app = express();
+const app = express();
 
-// app.use(express.static("./"));
+app.use(express.static("./"));
 
-// app.listen(5000);
+app.listen(5000);
 
 const vapidKeys = {
   publicKey:
