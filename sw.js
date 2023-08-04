@@ -1,5 +1,8 @@
 self.addEventListener("push", (e) => {
+  console.log(e);
   e.waitUntil(
-    self.registration.showNotification("Test push notifications", {})
+    self.registration.showNotification("Test push notifications", {
+      body: "Test",
+    })
   );
 });

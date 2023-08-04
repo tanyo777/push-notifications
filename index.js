@@ -32,12 +32,12 @@ const subscription = {
 
 const test = {
   endpoint:
-    "https://fcm.googleapis.com/fcm/send/e5omcd1a9Xo:APA91bHW0rDDM9yZ0Q7ttbtS_6V7XWsxhN-CFebztnCw8Zy5pjY58WsVaEFecXZUQY2AkCbJougQ90jIFQmEn_Qx2LQBpgtxpjjLpD3Kr_vTf1wioi_kOcV5SBHH1viTEMOA1QVIcA1o",
+    "https://fcm.googleapis.com/fcm/send/eBgGRnH9T4Q:APA91bFZSfxrLXMcWF8zI3Raw1j_LbwFoI1Uy1zOsIorD8MbyMGZY2i0cNDP-eaIBOX_ADAaUm2ug10kt6kKSkbHr5EunittbLBx8n5IXhGMehg4hgxwe0-Hiv00IXhbfUQDEVl-RSWY",
   expirationTime: null,
   keys: {
     p256dh:
-      "BM7a9nBOtedowxRlQcLelVgH2osb35vqCIy2SsjpLv1n7MEmPG8Z_0XQ_exSj4ll5LpR5QRVdgxAvbgTLY_1ccE",
-    auth: "ZjcE0sM6wdOG7oIX2-NF5g",
+      "BNw0Muqztfl6cdXX6NNEXverkygIV0TBmSTy9ooJxgnHcCgWqZ6QwC_iH1A8OBGuzR28dh0VLF2pzOntnah4Uuo",
+    auth: "Ly9OEaK141RPRmmWO6_zSQ",
   },
 };
 
